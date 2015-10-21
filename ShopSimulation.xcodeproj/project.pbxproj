@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B1DE8D811BD78EDB00786F90 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D801BD78EDB00786F90 /* main.swift */; };
+		B1DE8D881BD7A3AD00786F90 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D871BD7A3AD00786F90 /* Shop.swift */; settings = {ASSET_TAGS = (); }; };
+		B1DE8D8A1BD7AD5200786F90 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D891BD7AD5200786F90 /* Customer.swift */; settings = {ASSET_TAGS = (); }; };
+		B1DE8D8C1BD7AD9200786F90 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D8B1BD7AD9200786F90 /* Chart.swift */; settings = {ASSET_TAGS = (); }; };
+		B1DE8D8E1BD7ADB400786F90 /* Paydesk.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D8D1BD7ADB400786F90 /* Paydesk.swift */; settings = {ASSET_TAGS = (); }; };
+		B1DE8D901BD7ADC500786F90 /* Warehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D8F1BD7ADC500786F90 /* Warehouse.swift */; settings = {ASSET_TAGS = (); }; };
+		B1DE8D921BD7ADE800786F90 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D911BD7ADE800786F90 /* Simulation.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		B1DE8D7D1BD78EDA00786F90 /* ShopSimulation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShopSimulation; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DE8D801BD78EDB00786F90 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B1DE8D871BD7A3AD00786F90 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		B1DE8D891BD7AD5200786F90 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		B1DE8D8B1BD7AD9200786F90 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		B1DE8D8D1BD7ADB400786F90 /* Paydesk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paydesk.swift; sourceTree = "<group>"; };
+		B1DE8D8F1BD7ADC500786F90 /* Warehouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warehouse.swift; sourceTree = "<group>"; };
+		B1DE8D911BD7ADE800786F90 /* Simulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				B1DE8D801BD78EDB00786F90 /* main.swift */,
+				B1DE8D871BD7A3AD00786F90 /* Shop.swift */,
+				B1DE8D891BD7AD5200786F90 /* Customer.swift */,
+				B1DE8D8B1BD7AD9200786F90 /* Chart.swift */,
+				B1DE8D8D1BD7ADB400786F90 /* Paydesk.swift */,
+				B1DE8D8F1BD7ADC500786F90 /* Warehouse.swift */,
+				B1DE8D911BD7ADE800786F90 /* Simulation.swift */,
 			);
 			path = ShopSimulation;
 			sourceTree = "<group>";
@@ -118,7 +136,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1DE8D8C1BD7AD9200786F90 /* Chart.swift in Sources */,
+				B1DE8D901BD7ADC500786F90 /* Warehouse.swift in Sources */,
+				B1DE8D8A1BD7AD5200786F90 /* Customer.swift in Sources */,
+				B1DE8D8E1BD7ADB400786F90 /* Paydesk.swift in Sources */,
+				B1DE8D921BD7ADE800786F90 /* Simulation.swift in Sources */,
 				B1DE8D811BD78EDB00786F90 /* main.swift in Sources */,
+				B1DE8D881BD7A3AD00786F90 /* Shop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
