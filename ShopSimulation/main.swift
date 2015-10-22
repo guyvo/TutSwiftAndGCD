@@ -15,26 +15,41 @@
 import Foundation
 import Darwin.ncurses
 
-// using environment variables of the system
-setlocale(LC_ALL,"")
-
-// Initialize ncurses
-initscr()
-cbreak()
-noecho()
-nonl()
-intrflush(stdscr,true)
-keypad(stdscr,true)
-curs_set(0)
-
-// stay in the program until ESC is pressed
-while true {
+// default of 10 seconds as maxmimum
+func randomSleep (maximum : UInt32 = 10) -> UInt32 {
     
-    switch getch(){
-    case 27:
-        endwin()
-        exit(EX_OK)
-    default: true
-    }
-    
+    let time = UInt32(arc4random()) % maximum
+    sleep(time)
+    return time
 }
+
+// for later use
+func useUI() {
+    // using environment variables of the system
+    setlocale(LC_ALL,"")
+    
+    // Initialize ncurses
+    initscr()
+    cbreak()
+    noecho()
+    nonl()
+    intrflush(stdscr,true)
+    keypad(stdscr,true)
+    curs_set(0)
+    
+    // stay in the program until ESC is pressed
+    while true {
+        
+        switch getch(){
+        case 27:
+            endwin()
+            exit(EX_OK)
+        default: true
+        }
+        
+    }
+}
+
+let t = randomSleep()
+print("done in \(t) seconds")
+
