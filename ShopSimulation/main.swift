@@ -50,6 +50,12 @@ func useUI() {
     }
 }
 
-let t = randomSleep()
-print("done in \(t) seconds")
+//let t = randomSleep()
+let p1 = Food(kind: KindOfFood.FRUIT, price: 2.5)
+let p2 = NonFood(kind: KindOfNonFood.CLEANING, price : 15.2 )
+let pa : Array<Product> = [p1,p2]
+let w = Warehouse(products: pa)
+
+
+print("done")
 
