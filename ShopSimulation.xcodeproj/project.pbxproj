@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12A1BF51BD8F2C00035A001 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12A1BF41BD8F2C00035A001 /* Product.swift */; settings = {ASSET_TAGS = (); }; };
+		B12A1BF71BD8F8700035A001 /* libncurses.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B12A1BF61BD8F8700035A001 /* libncurses.tbd */; };
 		B1DE8D811BD78EDB00786F90 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D801BD78EDB00786F90 /* main.swift */; };
 		B1DE8D881BD7A3AD00786F90 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D871BD7A3AD00786F90 /* Shop.swift */; settings = {ASSET_TAGS = (); }; };
 		B1DE8D8A1BD7AD5200786F90 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D891BD7AD5200786F90 /* Customer.swift */; settings = {ASSET_TAGS = (); }; };
@@ -29,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B12A1BF41BD8F2C00035A001 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B12A1BF61BD8F8700035A001 /* libncurses.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libncurses.tbd; path = usr/lib/libncurses.tbd; sourceTree = SDKROOT; };
 		B1DE8D7D1BD78EDA00786F90 /* ShopSimulation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShopSimulation; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DE8D801BD78EDB00786F90 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B1DE8D871BD7A3AD00786F90 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12A1BF71BD8F8700035A001 /* libncurses.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +58,7 @@
 		B1DE8D741BD78EDA00786F90 = {
 			isa = PBXGroup;
 			children = (
+				B12A1BF61BD8F8700035A001 /* libncurses.tbd */,
 				B1DE8D7F1BD78EDA00786F90 /* ShopSimulation */,
 				B1DE8D7E1BD78EDA00786F90 /* Products */,
 			);
@@ -76,6 +82,7 @@
 				B1DE8D8D1BD7ADB400786F90 /* Paydesk.swift */,
 				B1DE8D8F1BD7ADC500786F90 /* Warehouse.swift */,
 				B1DE8D911BD7ADE800786F90 /* Simulation.swift */,
+				B12A1BF41BD8F2C00035A001 /* Product.swift */,
 			);
 			path = ShopSimulation;
 			sourceTree = "<group>";
@@ -137,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1DE8D8C1BD7AD9200786F90 /* Chart.swift in Sources */,
+				B12A1BF51BD8F2C00035A001 /* Product.swift in Sources */,
 				B1DE8D901BD7ADC500786F90 /* Warehouse.swift in Sources */,
 				B1DE8D8A1BD7AD5200786F90 /* Customer.swift in Sources */,
 				B1DE8D8E1BD7ADB400786F90 /* Paydesk.swift in Sources */,
@@ -260,6 +268,7 @@
 				B1DE8D861BD78EDB00786F90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
