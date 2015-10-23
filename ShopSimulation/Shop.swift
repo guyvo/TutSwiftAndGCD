@@ -9,3 +9,9 @@
 // class
 
 import Foundation
+
+class Shop {
+        
+    
+    
+}
