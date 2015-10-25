@@ -16,7 +16,7 @@ import Foundation
 import Darwin.ncurses
 
 // default of 10 seconds as maxmimum
-func randomSleep (maximum : UInt32 = 10) -> UInt32 {
+func randomSleep (maximum : UInt32 = 2) -> UInt32 {
     
     let time = UInt32(arc4random()) % maximum
     sleep(time)
@@ -56,6 +56,12 @@ let p2 = NonFood(kind: KindOfNonFood.CLEANING, price : 15.2 )
 let pa : Array<Product> = [p1,p2]
 let w = Warehouse(products: pa)
 
+let sim = Simulation(maxProductsToBuy: 20)
+let customers = sim.createCustomers(50)
+let shop = Shop(amountOfDesks: 4, deskCapacity: 20)
+
+shop.runShop(customers)
+dispatch_group_wait(shop.group, DISPATCH_TIME_FOREVER)
 
 print("done")
 
