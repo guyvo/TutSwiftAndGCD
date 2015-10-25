@@ -26,42 +26,45 @@ private enum stateCustomer{
 
 class Customer{
     
+    
     let amountOfProductsNeeded : Int
+    var id : Int
     
     private var state = stateCustomer.ARRIVED {
         willSet (value) {
             // notify here
-            print("state \(state) will change into \(value)")
+            print("customer_\(id) state \(state) will change into \(value)")
         }
         didSet{
             // notify here
-            print("state changed into \(state)")
+            print("customer_\(id) state changed into \(state)")
         }
     }
     
-    init (neededProducts : Int){
+    init (id : Int,neededProducts : Int){
         amountOfProductsNeeded = neededProducts
+        self.id = id
     }
     
     func drivetoShop(){
         randomSleep()
-        stateCustomer.ARRIVED
+        state = stateCustomer.ARRIVED
     }
     
     func takeChart(){
         randomSleep()
-        stateCustomer.ENTERED_SHOP
+        state = stateCustomer.ENTERED_SHOP
         randomSleep()
-        stateCustomer.CHART_TAKEN
+        state = stateCustomer.CHART_TAKEN
     }
     
     func searchProduct(){
-        stateCustomer.IN_SEARCH
+        state = stateCustomer.IN_SEARCH
         randomSleep()
     }
     
     func takeProduct(){
-        stateCustomer.PRODUCT_TAKEN
+        state = stateCustomer.PRODUCT_TAKEN
         randomSleep()
     }
     
@@ -73,31 +76,31 @@ class Customer{
     }
     
     func waitPaydesk(){
-        stateCustomer.WAIT_PAYDESK
+        state = stateCustomer.WAIT_PAYDESK
     }
     
     func putOnBelt(){
         randomSleep()
-        stateCustomer.PRODUCTS_OUT_CHART
+        state = stateCustomer.PRODUCTS_OUT_CHART
     }
     
     func putInChart(){
         randomSleep()
-        stateCustomer.PRODUCTS_IN_CHART
+        state = stateCustomer.PRODUCTS_IN_CHART
     }
     
     func hasPayed(){
         randomSleep()
-        stateCustomer.PAYED
+        state = stateCustomer.PAYED
     }
     
     func dropChart(){
         randomSleep()
-        stateCustomer.CHART_DROPPED
+        state = stateCustomer.CHART_DROPPED
     }
     
     func leaveShop(){
         randomSleep()
-        stateCustomer.LEFT_SHOP
+        state = stateCustomer.LEFT_SHOP
     }
 }

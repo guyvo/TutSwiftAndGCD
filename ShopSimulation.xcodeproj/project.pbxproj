@@ -3,20 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B12A1BF51BD8F2C00035A001 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12A1BF41BD8F2C00035A001 /* Product.swift */; settings = {ASSET_TAGS = (); }; };
+		B12A1BF51BD8F2C00035A001 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12A1BF41BD8F2C00035A001 /* Product.swift */; };
 		B12A1BF71BD8F8700035A001 /* libncurses.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B12A1BF61BD8F8700035A001 /* libncurses.tbd */; };
-		B12A1BF91BD95DCF0035A001 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B12A1BF81BD95DCF0035A001 /* README.md */; settings = {ASSET_TAGS = (); }; };
+		B12A1BF91BD95DCF0035A001 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B12A1BF81BD95DCF0035A001 /* README.md */; };
 		B1DE8D811BD78EDB00786F90 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D801BD78EDB00786F90 /* main.swift */; };
-		B1DE8D881BD7A3AD00786F90 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D871BD7A3AD00786F90 /* Shop.swift */; settings = {ASSET_TAGS = (); }; };
-		B1DE8D8A1BD7AD5200786F90 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D891BD7AD5200786F90 /* Customer.swift */; settings = {ASSET_TAGS = (); }; };
-		B1DE8D8C1BD7AD9200786F90 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D8B1BD7AD9200786F90 /* Chart.swift */; settings = {ASSET_TAGS = (); }; };
-		B1DE8D8E1BD7ADB400786F90 /* Paydesk.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D8D1BD7ADB400786F90 /* Paydesk.swift */; settings = {ASSET_TAGS = (); }; };
-		B1DE8D901BD7ADC500786F90 /* Warehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D8F1BD7ADC500786F90 /* Warehouse.swift */; settings = {ASSET_TAGS = (); }; };
-		B1DE8D921BD7ADE800786F90 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D911BD7ADE800786F90 /* Simulation.swift */; settings = {ASSET_TAGS = (); }; };
+		B1DE8D881BD7A3AD00786F90 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D871BD7A3AD00786F90 /* Shop.swift */; };
+		B1DE8D8A1BD7AD5200786F90 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D891BD7AD5200786F90 /* Customer.swift */; };
+		B1DE8D8C1BD7AD9200786F90 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D8B1BD7AD9200786F90 /* Chart.swift */; };
+		B1DE8D8E1BD7ADB400786F90 /* Paydesk.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D8D1BD7ADB400786F90 /* Paydesk.swift */; };
+		B1DE8D901BD7ADC500786F90 /* Warehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D8F1BD7ADC500786F90 /* Warehouse.swift */; };
+		B1DE8D921BD7ADE800786F90 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D911BD7ADE800786F90 /* Simulation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -125,7 +125,7 @@
 				};
 			};
 			buildConfigurationList = B1DE8D781BD78EDA00786F90 /* Build configuration list for PBXProject "ShopSimulation" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
