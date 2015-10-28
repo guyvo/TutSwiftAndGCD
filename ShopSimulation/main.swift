@@ -59,8 +59,8 @@ let p2 = NonFood(kind: KindOfNonFood.CLEANING, price : 15.2 )
 let pa : Array<Product> = [p1,p2]
 let w = Warehouse(products: pa)
 
-let sim = Simulation(maxProductsToBuy: 20)
-let customers = sim.createCustomers(50)
+let sim = Simulation(maxProductsToBuy: 2)
+let customers = sim.createCustomers(2)
 let shop = Shop(amountOfDesks: 4, deskCapacity: 20)
 
 shop.runShop(customers)
