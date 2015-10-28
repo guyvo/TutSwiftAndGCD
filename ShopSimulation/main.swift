@@ -15,7 +15,7 @@
 import Foundation
 import Darwin.ncurses
 
-// default of 10 seconds as maxmimum
+// default of x seconds as maxmimum
 func randomSleep (maximum : UInt32 = 2) -> UInt32 {
     
     let time = UInt32(arc4random()) % maximum

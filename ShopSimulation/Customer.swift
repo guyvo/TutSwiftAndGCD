@@ -26,9 +26,8 @@ private enum stateCustomer{
 
 class Customer{
     
-    
-    let amountOfProductsNeeded : Int
     var id : Int
+    let amountOfProductsNeeded : Int
     
     private var state = stateCustomer.ARRIVED {
         willSet (value) {
