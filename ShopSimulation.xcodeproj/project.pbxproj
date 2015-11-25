@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		B12A1BF51BD8F2C00035A001 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12A1BF41BD8F2C00035A001 /* Product.swift */; };
 		B12A1BF71BD8F8700035A001 /* libncurses.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B12A1BF61BD8F8700035A001 /* libncurses.tbd */; };
-		B12A1BF91BD95DCF0035A001 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B12A1BF81BD95DCF0035A001 /* README.md */; };
+		B18AEBC51C00E13F0062CE8D /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18AEBC41C00E13F0062CE8D /* UI.swift */; };
+		B18AEBC71C00E1900062CE8D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18AEBC61C00E1900062CE8D /* Util.swift */; };
+		B18AEBC91C00F2CC0062CE8D /* cursesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18AEBC81C00F2CC0062CE8D /* cursesUI.swift */; };
 		B1DE8D811BD78EDB00786F90 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D801BD78EDB00786F90 /* main.swift */; };
 		B1DE8D881BD7A3AD00786F90 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D871BD7A3AD00786F90 /* Shop.swift */; };
 		B1DE8D8A1BD7AD5200786F90 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE8D891BD7AD5200786F90 /* Customer.swift */; };
@@ -35,6 +37,9 @@
 		B12A1BF41BD8F2C00035A001 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		B12A1BF61BD8F8700035A001 /* libncurses.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libncurses.tbd; path = usr/lib/libncurses.tbd; sourceTree = SDKROOT; };
 		B12A1BF81BD95DCF0035A001 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B18AEBC41C00E13F0062CE8D /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		B18AEBC61C00E1900062CE8D /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B18AEBC81C00F2CC0062CE8D /* cursesUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cursesUI.swift; sourceTree = "<group>"; };
 		B1DE8D7D1BD78EDA00786F90 /* ShopSimulation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShopSimulation; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DE8D801BD78EDB00786F90 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B1DE8D871BD7A3AD00786F90 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
@@ -86,6 +91,9 @@
 				B1DE8D8F1BD7ADC500786F90 /* Warehouse.swift */,
 				B1DE8D911BD7ADE800786F90 /* Simulation.swift */,
 				B12A1BF41BD8F2C00035A001 /* Product.swift */,
+				B18AEBC41C00E13F0062CE8D /* UI.swift */,
+				B18AEBC61C00E1900062CE8D /* Util.swift */,
+				B18AEBC81C00F2CC0062CE8D /* cursesUI.swift */,
 			);
 			path = ShopSimulation;
 			sourceTree = "<group>";
@@ -146,13 +154,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18AEBC71C00E1900062CE8D /* Util.swift in Sources */,
 				B1DE8D8C1BD7AD9200786F90 /* Chart.swift in Sources */,
 				B12A1BF51BD8F2C00035A001 /* Product.swift in Sources */,
 				B1DE8D901BD7ADC500786F90 /* Warehouse.swift in Sources */,
+				B18AEBC91C00F2CC0062CE8D /* cursesUI.swift in Sources */,
+				B18AEBC51C00E13F0062CE8D /* UI.swift in Sources */,
 				B1DE8D8A1BD7AD5200786F90 /* Customer.swift in Sources */,
 				B1DE8D8E1BD7ADB400786F90 /* Paydesk.swift in Sources */,
 				B1DE8D921BD7ADE800786F90 /* Simulation.swift in Sources */,
-				B12A1BF91BD95DCF0035A001 /* README.md in Sources */,
 				B1DE8D811BD78EDB00786F90 /* main.swift in Sources */,
 				B1DE8D881BD7A3AD00786F90 /* Shop.swift in Sources */,
 			);

@@ -24,13 +24,9 @@ class PayDesk{
         print(" customer_\(customer.id) is waiting on paydesk \(name)")
         dispatch_semaphore_wait(capacity, DISPATCH_TIME_FOREVER)
         dispatch_sync(queue, {
-            randomSleep()
             customer.putOnBelt()
-            randomSleep()
             customer.putInChart()
-            randomSleep()
             customer.hasPayed()
-            randomSleep()
             dispatch_semaphore_signal(self.capacity)
         })
     }
