@@ -9,7 +9,7 @@
 import Foundation
 
 // default of x seconds as maxmimum
-func randomSleep (maximum : UInt32 = 10) -> UInt32 {
+func randomSleep (maximum : UInt32 = 2) -> UInt32 {
     
     let time = UInt32(arc4random()) % maximum;sleep(time)
     return time
