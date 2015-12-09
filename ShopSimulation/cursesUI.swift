@@ -56,7 +56,7 @@ class cursesUI : UI{
         // Setup update timer
         attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_USER_INTERACTIVE, 0)
         source = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_queue_create("com.gvo.timer", attr))
-        dispatch_source_set_timer(source, dispatch_time(DISPATCH_TIME_NOW, 0), NSEC_PER_SEC / 100, 0)
+        dispatch_source_set_timer(source, dispatch_time(DISPATCH_TIME_NOW, 0), NSEC_PER_SEC / 10, 0)
         dispatch_source_set_event_handler(source) {
             self.Render()
         }
@@ -114,10 +114,7 @@ class cursesUI : UI{
     func Render(){
         totals.calcTotals(sim.getCustomers())
         clear()
-        //vline(0x221A, 10)
-        //addstr("\u{221A}")
         attron(COLOR_PAIR(1))
-        hline(50000,70);
         move(2,2)
         addstr(stateCustomer.ARRIVED.description + ": " + String(totals.totalArrived))
         meter(totals.totalArrived)
