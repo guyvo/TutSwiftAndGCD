@@ -10,6 +10,7 @@
 import Foundation
 import Darwin.ncurses
 
+
 // Terminal UI implements protocol UI
 class cursesUI : UI{
     
@@ -42,6 +43,7 @@ class cursesUI : UI{
         // Color setup
         start_color()
         init_pair(1,Int16(COLOR_GREEN),Int16(COLOR_BLACK));
+        init_pair(2,Int16(COLOR_BLACK),Int16(COLOR_BLUE));
         
         // Include function keys
         keypad(stdscr, true)
@@ -84,6 +86,8 @@ class cursesUI : UI{
                 heigth = LINES
                 break
             case KEY_MAX:
+                width = COLS
+                heigth = LINES
                 break
             case KEY_MIN:
                 break
@@ -98,34 +102,65 @@ class cursesUI : UI{
         
     }
     
+    func meter(var i : Int){
+        addch(32)
+        attron(COLOR_PAIR(2))
+        while ( i-- > 0) {
+            addch(32)
+        }
+        attroff(COLOR_PAIR(2))
+    }
+    
     func Render(){
         totals.calcTotals(sim.getCustomers())
         clear()
+        //vline(0x221A, 10)
+        //addstr("\u{221A}")
         attron(COLOR_PAIR(1))
         hline(50000,70);
         move(2,2)
         addstr(stateCustomer.ARRIVED.description + ": " + String(totals.totalArrived))
+        meter(totals.totalArrived)
+        attron(COLOR_PAIR(1))
         move(3,2)
         addstr(stateCustomer.ENTERED_SHOP.description + ": " + String(totals.totalEntered))
+        meter(totals.totalEntered)
+        attron(COLOR_PAIR(1))
         move(4,2)
         addstr(stateCustomer.CHART_TAKEN.description + ": " + String(totals.totalChartTaken))
+        meter(totals.totalChartTaken)
+        attron(COLOR_PAIR(1))
         move(5,2)
         addstr(stateCustomer.IN_SEARCH.description + ": " + String(totals.totalInSearch))
+        meter(totals.totalInSearch)
+        attron(COLOR_PAIR(1))
         move(6,2)
         addstr(stateCustomer.PRODUCT_TAKEN.description + ": " + String(totals.totalProductTaken))
+        meter(totals.totalProductTaken)
+        attron(COLOR_PAIR(1))
         move(7,2)
         addstr(stateCustomer.WAIT_PAYDESK.description + ": " + String(totals.totalWaitPaydesk))
+        meter(totals.totalWaitPaydesk)
+        attron(COLOR_PAIR(1))
         move(8,2)
         addstr(stateCustomer.PRODUCTS_OUT_CHART.description + ": " + String(totals.totalOutChart))
+        meter(totals.totalOutChart)
+        attron(COLOR_PAIR(1))
         move(9,2)
         addstr(stateCustomer.PRODUCTS_IN_CHART.description + ": " + String(totals.totalInChart))
+        meter(totals.totalInChart)
+        attron(COLOR_PAIR(1))
         move(10,2)
         addstr(stateCustomer.PAYED.description + ": " + String(totals.totalPayed))
+        meter(totals.totalPayed)
+        attron(COLOR_PAIR(1))
         move(11,2)
         addstr(stateCustomer.CHART_DROPPED.description + ": " + String(totals.totalCartDropped))
+        meter(totals.totalCartDropped)
+        attron(COLOR_PAIR(1))
         move(12,2)
         addstr(stateCustomer.LEFT_SHOP.description + ": " + String(totals.totalLeftShop))
-        attroff(COLOR_PAIR(1))
+        meter(totals.totalLeftShop)
         refresh()
         totals.zeroTotals()
     }
